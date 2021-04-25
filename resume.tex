@@ -1,0 +1,127 @@
+\documentclass [12pt] {article}
+
+\usepackage {fontawesome5}
+\usepackage {fontspec}
+\usepackage {geometry}
+\usepackage {graphicx}
+\usepackage {hyperref}
+\usepackage {titlesec}
+\usepackage {xcolor}
+
+\geometry {a4paper, margin=20mm}
+\hypersetup {hidelinks}
+\parindent 0mm
+\setmainfont {Liberation Serif}
+\thispagestyle {empty}
+\titleformat {\section} {\large \ColorAccent} {} {0mm} {} [\SectionLine]
+\titlespacing {\section} {0mm} {\baselineskip} {0mm}
+
+\newcommand \At {@}
+
+\newcommand \Name {Dmitry Kalyukov}
+\newcommand \Position {Python Developer}
+\newcommand \Email {dmitrykalyukov\At gmail.com}
+\newcommand \Phone {+7\,000\,000\,00\,00}
+\newcommand \LinkedIn {dmitrykalyukov}
+\newcommand \GitHub {dmitrvk}
+
+\newcommand \CloserUnderline [1] {\underline {\smash {#1}}}
+\newcommand \SectionLine {\hrule \medskip}
+\newcommand \ColorAccent {\addfontfeature {Color = 373737}}
+
+\begin {document}
+
+{\Large \ColorAccent \Name}
+\medskip
+
+{\large \ColorAccent \Position}
+\bigskip
+
+\faEnvelope [regular]\enspace \href {mailto:\Email} \Email \hfill
+\faPhone*\enspace \Phone \hfill
+\faLinkedinIn\enspace
+\href {https://linkedin.com/in/\LinkedIn} {\CloserUnderline \LinkedIn} \hfill
+\faGithub\enspace
+\href {https://github.com/\GitHub} {\CloserUnderline {\GitHub}}
+
+\bigskip
+
+Age 22 \quad Kaliningrad
+
+\section {Experience}
+
+\href {https://ruyou.ru} {\underline {RuYou.Ru}}
+
+\emph {Python Developer}
+
+Sep 2020 -- Feb 2021
+
+I've been working remotely for several months
+building backends for two mobile applications.\\
+Those were an in-store payments app and a food delivery app.\\
+I implemented API for the client side
+and several integrations with external systems.\\
+I communicated
+with a frontend develper, project managers, and other team members.
+
+\smallskip
+
+Python / Django \\ PostgreSQL \\ Redis
+
+Set up automated tests with GitLab Pipelines.
+
+Deployed with Docker Swarm mode.
+
+\bigskip
+
+\href {https://www.mymusichere.me} {\CloserUnderline {www.mymusichere.me}}
+(pet project)
+
+\emph {Web app for sharing personal sheet music collection}
+
+I created the web application,
+deployed it on the web server
+and set up CI\hspace{0.2mm}/\hspace{0.2mm}CD with GitHub Actions.
+
+\bigskip
+
+\href {https://pypi.org/project/smth} {\CloserUnderline {smth}}
+(pet project)
+
+\emph {Command-line tool for scanning books and handwriting on Linux}
+
+I created the CLI application in Python
+and published it on the Python Package Index.
+
+\section {Education}
+
+2017--2021
+
+Kaliningrad State Technical University
+
+Applied Information Technology
+
+\bigskip
+
+\emph {Additional}:
+
+2015--2016
+
+Samsung IT School
+
+I learned the basics of programming
+and made an Android application as the final individual project.
+
+\section {About}
+
+English language is the primary tool
+I use on a daily basis when doing my work.
+
+I work preferably with Linux systems.
+
+LaTeX system is one of my favorites
+when it comes to writing documents.
+
+I also play the piano and create music.
+
+\end {document}
