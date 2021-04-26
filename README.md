@@ -8,3 +8,8 @@
 ## Build
 
 Install LaTeX with *latexmk* and run `make`.
+This will produce *DmitryKalyukov.pdf*.
+
+You can change the output file name in the [Makefile](./Makefile).
+
+Run `make clean` to remove auxiliary files created by LaTeX.
