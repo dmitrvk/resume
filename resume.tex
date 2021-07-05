@@ -22,7 +22,6 @@
 \newcommand \Position {Python Developer}
 \newcommand \Email {dmitrykalyukov\At gmail.com}
 \newcommand \Phone {+7\,000\,000\,00\,00}
-\newcommand \Telegram {dmitrvk}
 \newcommand \LinkedIn {dmitrykalyukov}
 \newcommand \GitHub {dmitrvk}
 
@@ -32,7 +31,7 @@
 
 \begin {document}
 
-{\Large \ColorAccent \Name}
+{\LARGE \ColorAccent \Name}
 \medskip
 
 {\large \ColorAccent \Position}
@@ -40,7 +39,6 @@
 
 \faEnvelope [regular]~\href {mailto:\Email} \Email \hfill
 \faPhone*~\Phone \hfill
-\faTelegramPlane~\href {https://t.me/\Telegram} {\CloserUnderline \Telegram} \hfill
 \faLinkedinIn~%
 \href {https://linkedin.com/in/\LinkedIn} {\CloserUnderline \LinkedIn} \hfill
 \faGithub~%
@@ -58,19 +56,25 @@ Kaliningrad, Russia \quad~Age 22
 
 Sep 2020 -- Jun 2021
 
-I worked remotely building backends for mobile applications.\\
+\smallskip
+
+I worked remotely building backend for mobile applications.\\
 I made API`s for the client side
-and implemented several integrations with external systems.\\
+and implemented integrations with external API`s.\\
 I communicated
 with a frontend developer, project managers, and other team members.
 
-\smallskip
+\medskip
 
 Python / Django \\ PostgreSQL \\ Redis
 
-Set up automated tests with GitLab Pipelines.
+Set up CI with GitLab Pipelines.
 
 Deployed with Docker Swarm mode.
+
+nginx, gunicorn
+
+Used Sentry for error tracking.
 
 \bigskip
 
@@ -80,10 +84,15 @@ Deployed with Docker Swarm mode.
 I developed the web application in Python
 to automate sheet music publishing process.
 
-I used aiohttp for backend along with jinja2 template engine.
+\medskip
 
-I deployed the app on the web server
-and set up CI\hspace{0.2mm}/\hspace{0.2mm}CD with GitHub Actions.
+Python, aiohttp, pytest
+
+HTML, CSS
+
+Caddy web server
+
+I set up CI/CD with GitHub Actions and deployed the app with Docker.
 
 \bigskip
 
@@ -93,7 +102,11 @@ and set up CI\hspace{0.2mm}/\hspace{0.2mm}CD with GitHub Actions.
 I created the command-line app in Python to scan books and handwriting in
 batch mode on Linux.
 
-I published the app on the Python Package Index.
+\medskip
+
+Python, unittest
+
+CI with GitHub Actions
 
 \section {Education}
 
@@ -101,7 +114,7 @@ I published the app on the Python Package Index.
 
 Kaliningrad State Technical University
 
-Applied Information Technology
+Applied Informatics
 
 \bigskip
 
